@@ -27,7 +27,7 @@ class Dataset:
             raw = nltk.corpus.machado.raw(t)
             corpus += limpa(raw)
 
-        corpus = str(corpus)
+        corpus = " ".join(corpus)
         return corpus
 
     def __init__(self, data="machado"):
